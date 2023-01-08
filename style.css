@@ -1,0 +1,154 @@
+
+body {
+    background-color: #d1e6d9;
+    padding: 0 50px;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.title {
+    color:rgb(14, 71, 14);
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.landingpagebody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landingpagebody-right {
+    display: flex;
+    align-items: center;
+}
+
+.landingpagebody-left {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    margin-bottom: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 2px;
+    padding: 1px;
+    cursor: pointer;
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(16, 92, 55);
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: rgb(36, 168, 36);
+    text-decoration: underline;
+}
+
+.righticons img {
+    display: flex;
+    align-items: right;
+    max-height: 50px;
+    max-width: 50px;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 25%;
+}
+
+.leftlogo img {
+    display: flex;
+    align-items: left;
+    max-height: 50px;
+    max-width: 75px;
+    border-radius: 50px;
+}
+
+.hobbygrid {
+    display: grid;
+    gap: .150rem;
+    grid-template-columns: repeat(4, 25%);
+    max-width: 700px;
+    margin: auto;
+    /* width and margin puts my cards in the center of the page */
+}
+
+.card {
+    aspect-ratio: 1 /1.5;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.stacked {
+    display: grid;
+    cursor: pointer;
+}
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+}
+
+.cardcontent {
+    background: rgba(141, 192, 141, .80);
+    align-self: baseline;
+    text-align: center;
+    margin: .2rem;
+    /* the margin lets the little green placard float on the image */
+    font-size: small;
+    border-radius: 2%;
+    padding: .2rem;
+    box-shadow: 0 .25rem 5rem rgba(0, 0, 0, 0);
+}
+
+.card_title {
+    font-weight: 1.2;
+    font-size: 18px;
+}
+
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    object-fit: cover;
+}
+
+button {
+    background-color: pink;
+    font-weight: normal;
+    border-radius: 5%;
+    cursor: pointer;
+    padding: 3px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    margin: 15px;
+}
+
+p {
+    display: inline;
+}
+
+
+/* remember: height in CSS is borked. Width works, height does not. Can only set height in px */
